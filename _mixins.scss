@@ -1,0 +1,13 @@
+@mixin flex-container($direction,$justify,$aling){
+    display: flex;
+    flex-direction: direction;
+    justify-content: justify;
+    align-items: align;
+}
+
+@mixin flex-container($wrap, $flow,$justify) {
+    display:flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-items: stretch;
+}
