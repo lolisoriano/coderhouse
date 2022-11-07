@@ -1,0 +1,338 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  color: rgb(10, 10, 10);
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 48px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.container-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3em, 24em, 16em, 5em;
+  grid-template-areas: "header header header" 
+  "main main aside" 
+  "section none aside" 
+  "footer footer footer";
+}
+.header-grid {
+  grid-area: header;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+.main-grid {
+  grid-area: main;
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+.section-grid {
+  grid-area: section;
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.aside-grid {
+  grid-area: aside;
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
+.footer-grid {
+  grid-area: footer;
+  grid-column: 1/5;
+  grid-row: 5/6;
+}
+
+header {
+  background-color: burlywood;
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.6rem;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+nav {
+  width: 80%;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  float: right;
+}
+
+main {
+  background-color: rgba(255, 127, 80, 0.651);
+  width: 100%;
+  margin: 0px;
+}
+main h1 {
+  width: auto;
+  margin: 0px;
+  padding: 30px;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  border: 15px;
+  letter-spacing: 10px;
+}
+main h2 {
+  width: 100%;
+  padding: 2em;
+  padding-top: 0em;
+  margin: 0px;
+  margin-right: 3em;
+  font-size: 2em;
+  text-align: center;
+  text-decoration: underline;
+  word-spacing: 10px;
+}
+main h3 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+main h4 p {
+  width: 400px;
+  padding-top: 10px;
+  margin: 0px;
+  padding: 10px;
+  margin-right: auto;
+  font-family: system-ui, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 60px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: 20px;
+  text-align: center;
+}
+
+.introducción-flex {
+  display: flex;
+  text-align: center;
+  font-size: large;
+}
+
+img {
+  margin: 30px;
+  display: flex;
+  flex-flow: wrap;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 1rem;
+  flex-direction: column;
+}
+
+img center {
+  display: flex;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0, 5em;
+  margin-right: 1em;
+}
+
+.section-plantas-de-interior {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  padding: 10px;
+  width: 70%;
+  margin: 0px;
+  border: 4px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.section-plantas-de-exterior {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  padding: 10px;
+  width: 70%;
+  margin: 0px;
+  border: 4px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-items: stretch;
+}
+
+.container-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3em, 24em, 16em, 5em;
+  grid-template-areas: "header header header"
+  "main main aside" 
+  "section none aside" 
+  "footer footer footer";
+}
+.header-grid {
+  grid-area: header;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+.main-grid {
+  grid-area: main;
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+.section-grid {
+  grid-area: section;
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.aside-grid {
+  grid-area: aside;
+  grid-column: 3 / 4;
+  grid-row: 4 / 6;
+}
+.footer-grid {
+  grid-area: footer;
+  grid-column: 1/5;
+  grid-row: 5/6;
+}
+
+.main {
+  width: 100%;
+  background-color: rgba(255, 127, 80, 0.651);
+  margin: 0px;
+  line-height: 1.5em;
+  font-size: 1, 5em;
+}
+
+.faq {
+  background-color: rgba(255, 127, 80, 0.651);
+  width: 100%;
+  font-size: larger;
+  font-style: normal;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  padding: 5px;
+  float: right;
+}
+
+main .formulario-action {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  border-radius: 2em;
+}
+main form {
+  width: 800px;
+  background-color: rgb(245, 187, 187);
+  padding: 40px;
+  border-radius: 50px 100px;
+}
+main .form-label {
+  margin: 12px;
+  font-size: 22px;
+  padding: 5px;
+  text-transform: lowercase;
+  display: inline-block;
+  flex-direction: column;
+}
+main .form-input {
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  font-size: 15px;
+  display: inline-block;
+  flex-direction: column;
+}
+main .form-textarea {
+  width: 150px;
+  height: 150px;
+  border-radius: 4px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: center;
+}
+main .form-enviar {
+  width: auto;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  border: none;
+}
+main .form-enviar:hover {
+  background-color: rgb(242, 178, 93);
+  transition: 0.3s;
+}
+main .iframe {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  margin-top: 100px;
+}
+
+footer {
+  background-color: burlywood;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: larger;
+}
+
+#rrss {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 1em;
+}
+
+.copyrigth {
+  text-align: center;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header" "main main" "seccion aside" "footer footer";
+  }
+}
+@media screen and (max-width: 576px) {
+  .container-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "seccion" "aside" "footer";
+  }
+}/*# sourceMappingURL=style.css.map */

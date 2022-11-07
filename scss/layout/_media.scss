@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px){
+    .container-grid{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+            "header header"
+            "main main"
+            "seccion aside"
+            "footer footer";
+    }
+}
+
+@media  screen and (max-width: 576px){
+    .container-grid{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "main"
+        "seccion"
+        "aside"
+        "footer";
+    }
+}
